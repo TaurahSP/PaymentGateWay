@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PaymentGateway</name>
+    </assembly>
+    <members>
+        <member name="M:PaymentGateway.Controllers.PaymentDetailController.GetPaymentById(System.Guid)">
+            <summary>
+            Returns payment details for a specific id
+            </summary>
+            <param name="id">Unique Identifier of Payment being requested</param>
+            <returns>
+            Payment Details and status
+            </returns>
+            <response code="404">Requested Payment ID not found</response>
+            <response code="200">Returns payment details for Id queried</response>
+        </member>
+        <member name="M:PaymentGateway.Controllers.PaymentDetailController.CreateMerchantRequest(PaymentGateway.ApiDto.Carddto)">
+            <summary>
+            Process card details from merchant
+            </summary>
+            <param name="cardto">card details</param>
+            <response code="200">Card process successfully</response>
+        </member>
+        <member name="M:PaymentGateway.Extensions.ServiceExtensions.ConfigureCors(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            CORS gives rights to the user to access resources from the server on a different domain
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:PaymentGateway.Extensions.ServiceExtensions.ConfigureIISIntegration(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configure IIS integration
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:PaymentGateway.Extensions.ServiceExtensions.ConfigureSqlContext(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            create the service the first time you request it and then every subsequent request is calling the same instance of the service.
+            </summary>
+            <param name="services"></param>
+            <summary>
+            Create the service to connect to database
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:PaymentGateway.Extensions.ServiceExtensions.ConfigureRepositoryWrapper(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            groups all the repository
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:PaymentGateway.Extensions.ServiceExtensions.ConfigureSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configure swagger documentation
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:PaymentGateway.Extensions.ServiceExtensions.ConfigureIdentity(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configure app to use build-in identity services
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:PaymentGateway.Extensions.ServiceExtensions.ConfigureHealthCheck(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configure services for healthcheck of dbcontext
+            </summary>
+            <param name="services"></param>
+        </member>
+    </members>
+</doc>
