@@ -10,7 +10,6 @@ using Microsoft.Extensions.DependencyInjection;
 using PaymentGateway.ActionFilters;
 using PaymentGateway.Extensions;
 using Serilog;
-using System.Net.Http;
 
 namespace PaymentGateway
 {

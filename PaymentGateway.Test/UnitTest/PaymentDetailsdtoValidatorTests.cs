@@ -1,8 +1,6 @@
 ﻿using FluentValidation.TestHelper;
 using PaymentGateway.Validators;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using Xunit;
 
 namespace PaymentGateway.Test.UnitTest

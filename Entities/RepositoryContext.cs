@@ -6,16 +6,14 @@ namespace Entities
 {
     public class RepositoryContext : DbContext
     {
-        public DbSet<PaymentDetails> paymentdetails { get; set; }
+       
         public RepositoryContext(DbContextOptions options)
             : base(options)
         {
             AddTestData();
         }
 
-        public DbSet<MerchantTransaction> merchantTransactions { get; set;
-
-        }
+        public DbSet<MerchantTransaction> merchantTransactions { get; set;}
 
         public DbSet<PaymentDetails> PaymentDetails { get; set; }
 
@@ -31,7 +29,7 @@ namespace Entities
                 statuscode="PAYMENT SUCCESS"
             };
 
-            paymentdetails.Add(payment);
+            PaymentDetails.Add(payment);
 
             SaveChangesAsync();
         }

@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc;
 using PaymentGateway.ApiDto;
 using Serilog;
 using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace PaymentGateway.Controllers

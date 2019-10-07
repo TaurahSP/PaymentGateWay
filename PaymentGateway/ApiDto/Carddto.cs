@@ -1,6 +1,4 @@
-﻿using Contracts;
-using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System;
 
 namespace PaymentGateway.ApiDto
 {

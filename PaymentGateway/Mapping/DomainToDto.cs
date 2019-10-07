@@ -26,6 +26,7 @@ namespace PaymentGateway.Mapping
 
             CreateMap<Carddto, Card>();
 
+           
 
         }
     }

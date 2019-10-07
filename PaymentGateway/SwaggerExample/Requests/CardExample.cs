@@ -1,5 +1,4 @@
-﻿using Entities.Model;
-using PaymentGateway.ApiDto;
+﻿using PaymentGateway.ApiDto;
 using Swashbuckle.AspNetCore.Filters;
 using System;
 using System.Globalization;
