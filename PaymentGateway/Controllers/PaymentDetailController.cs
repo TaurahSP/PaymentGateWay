@@ -105,13 +105,12 @@ namespace PaymentGateway.Controllers
             var paymentDetailsdto = _mapper.Map<PaymentDetails>(bankresponse);
 
 
-            return Ok(paymentDetailsdto.statuscode);
+            return Ok(String.Format("Status: {0} PaymentID: {1}", paymentDetailsdto.statuscode, paymentDetailsdto.PaymentID));
 
-
+            
         }
 
-       
-
+      
         
 
     }
