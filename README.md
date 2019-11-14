@@ -22,6 +22,11 @@ Notable features include:
 - .NET Core 2.2
 
 ## Usage
+Clone the repository to your local computer
+
+Restore all packages by using the package manager console. Type the below cmd
+
+-dotnet restore
 
 Configure the solution to start multiple project in visual studio:
 - PaymentGateWay
