@@ -18,7 +18,7 @@ Notable features include:
 - Masking of card number can also be done at database level using dynamic data masking.
 - Versioning could have been implemented in production
 
-##IMPORTANT NOTICE
+## IMPORTANT NOTICE
 
 - When performing a POST request,the Payment ID was also return for testing purpose when using the GET Request
 
